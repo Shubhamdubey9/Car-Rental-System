@@ -17,7 +17,7 @@ import ManageBooking from "./Pages/Owner/ManageBooking";
 
 import { useAppContext } from "./AppContext/useAppContext";
 import { Toaster } from "sonner";
-import Navbar from "./components/NavBar";
+import NavBar from "./components/NavBar";
 
 const App = () => {
   const { showLogin, fetchUser } = useAppContext();
@@ -35,7 +35,7 @@ const App = () => {
       {showLogin && <Login />}
 
       
-      {!isOwnerPath && < Navbar />}
+      {!isOwnerPath && < NavBar />}
 
       <Routes>
         <Route path="/" element={<Home />} />
