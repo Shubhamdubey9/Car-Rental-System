@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 
-import Navbar from "./components/Navbar";
+
 import Footer from "./components/Footer";
 import Login from "./components/Auth/Login";
 
@@ -17,6 +17,7 @@ import ManageBooking from "./Pages/Owner/ManageBooking";
 
 import { useAppContext } from "./AppContext/useAppContext";
 import { Toaster } from "sonner";
+import Navbar from "./components/NavBar";
 
 const App = () => {
   const { showLogin, fetchUser } = useAppContext();
@@ -34,7 +35,7 @@ const App = () => {
       {showLogin && <Login />}
 
       
-      {!isOwnerPath && <Navbar />}
+      {!isOwnerPath && < Navbar />}
 
       <Routes>
         <Route path="/" element={<Home />} />
