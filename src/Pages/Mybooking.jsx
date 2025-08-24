@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import api from "../Api/Axios";
 import { toast } from "sonner";
 
-const MyBooking = () => {
+const Mybooking = () => {
   const [bookings, setBookings] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -151,4 +151,4 @@ const MyBooking = () => {
   );
 };
 
-export default MyBooking;
+export default Mybooking;
