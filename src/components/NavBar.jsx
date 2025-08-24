@@ -3,7 +3,7 @@ import { Link, useNavigate, useLocation } from "react-router-dom";
 import { assets, menuLinks } from "../assets/assets.js";
 import { useAppContext } from "../AppContext/useAppContext.js";
 import { toast } from "sonner";
-import api from "../Api/Axios";
+import api from "../Api/Axios.js";
 
 const Navbar = () => {
   const { user, setUser, isOwner, setIsOwner, open, setOpen, setShowLogin } = useAppContext();
