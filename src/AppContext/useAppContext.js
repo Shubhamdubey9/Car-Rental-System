@@ -1,7 +1,7 @@
-import AppContext from "./AppContext"; // ✅ default import
+import Appcontext from "./Appcontext"; // ✅ default import
 
 import { useContext } from "react";
 
-const useAppContext = () => useContext(AppContext);
+const useAppContext = () => useContext(Appcontext);
 
 export { useAppContext };

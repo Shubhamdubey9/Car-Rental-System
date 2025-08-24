@@ -1,15 +1,15 @@
-import SideBar from "../../components/Owner/SideBar.jsx";
-import NavbarOwner from "../../components/Owner/NavbarOwner.jsx";
+import SideBar from "../../components/Owner/SideBar";
+import NavbarOwner from "../../components/Owner/NavbarOwner";
 import { useEffect } from "react";
 import { Outlet, useNavigate } from "react-router-dom";
-import { useAppContext } from "@/AppContext/useAppContext.js";
+import { useAppContext } from "../../AppContext/useAppContext";
 
 const Layout = () => {
-  const { isOwner, loadingUser } = useAppContext(); 
+  const { isOwner, loadingUser } = useAppContext();
   const navigate = useNavigate();
 
   useEffect(() => {
-    
+
     if (!loadingUser && !isOwner) {
       navigate("/");
     }

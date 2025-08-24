@@ -1,9 +1,9 @@
 import React from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
-import { assets, menuLinks } from "../assets/assets.js";
-import { useAppContext } from "../AppContext/useAppContext.js";
+import { assets, menuLinks } from "../assets/assets";
+import { useAppContext } from "../AppContext/useAppContext";
 import { toast } from "sonner";
-import api from "../Api/Axios.js";
+import api from "../Api/Axios";
 
 const NavBar = () => {
   const { user, setUser, isOwner, setIsOwner, open, setOpen, setShowLogin } = useAppContext();
@@ -42,9 +42,8 @@ const NavBar = () => {
       )}
 
       <div
-        className={`fixed sm:static top-0 right-0 h-full w-4/5 max-w-xs sm:max-w-none sm:w-auto bg-white sm:bg-transparent border-l sm:border-0 border-borderColor flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-8 p-6 sm:p-0 transition-transform duration-300 z-50 shadow-2xl sm:shadow-none ${
-          open ? "translate-x-0" : "translate-x-full"
-        } sm:translate-x-0`}
+        className={`fixed sm:static top-0 right-0 h-full w-4/5 max-w-xs sm:max-w-none sm:w-auto bg-white sm:bg-transparent border-l sm:border-0 border-borderColor flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-8 p-6 sm:p-0 transition-transform duration-300 z-50 shadow-2xl sm:shadow-none ${open ? "translate-x-0" : "translate-x-full"
+          } sm:translate-x-0`}
         style={{ minHeight: open ? "100vh" : "auto" }}
       >
         <div className="flex flex-col sm:flex-row items-start sm:items-center gap-1 sm:gap-8 w-full">

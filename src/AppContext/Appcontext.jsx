@@ -3,7 +3,7 @@ import { createContext, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { toast } from "sonner";
 
-const AppContext = createContext();
+const Appcontext = createContext();
 
 export const AppProvider = ({ children }) => {
   const navigate = useNavigate();
@@ -95,7 +95,7 @@ export const AppProvider = ({ children }) => {
     getOwnerCars,
   };
 
-  return <AppContext.Provider value={value}>{children}</AppContext.Provider>;
+  return <Appcontext.Provider value={value}>{children}</Appcontext.Provider>;
 };
 
-export default AppContext;
+export default Appcontext;
