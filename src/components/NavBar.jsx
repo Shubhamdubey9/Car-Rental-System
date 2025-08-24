@@ -5,7 +5,7 @@ import { useAppContext } from "../AppContext/useAppContext.js";
 import { toast } from "sonner";
 import api from "../Api/Axios.js";
 
-const Navbar = () => {
+const NavBar = () => {
   const { user, setUser, isOwner, setIsOwner, open, setOpen, setShowLogin } = useAppContext();
   const navigate = useNavigate();
   const location = useLocation();
@@ -103,4 +103,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavBar;
