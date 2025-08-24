@@ -8,7 +8,7 @@ import Login from "./components/Auth/Login";
 import Home from "./Pages/Home";
 import Cars from "./Pages/Cars";
 import CarDetails from "./Pages/CarDetails";
-import MyBooking from "./Pages/MyBooking";
+
 import Layout from "./Pages/Owner/Layout";
 import DashBoard from "./Pages/Owner/DashBoard";
 import AddCar from "./Pages/Owner/AddCar";
@@ -18,6 +18,7 @@ import ManageBooking from "./Pages/Owner/ManageBooking";
 import { useAppContext } from "./AppContext/useAppContext";
 import { Toaster } from "sonner";
 import NavBar from "./components/NavBar";
+import Mybooking from "./Pages/Mybooking";
 
 const App = () => {
   const { showLogin, fetchUser } = useAppContext();
@@ -41,7 +42,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/cars" element={<Cars />} />
         <Route path="/car-details/:id" element={<CarDetails />} />
-        <Route path="/my-bookings" element={<MyBooking />} />
+        <Route path="/my-bookings" element={<Mybooking />} />
 
         <Route path="/owner" element={<Layout />}>
           <Route index element={<DashBoard />} />
