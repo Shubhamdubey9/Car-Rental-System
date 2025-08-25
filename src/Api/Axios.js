@@ -3,8 +3,8 @@ import axios from "axios";
 // Determine base URL
 const baseURL =
   import.meta.env.MODE === "development"
-    ? "/api" // Use Vite proxy for local dev
-    : import.meta.env.VITE_API_URL; // Use Render URL in production
+    ? "/api" 
+    : import.meta.env.VITE_API_URL; 
 
 const api = axios.create({
   baseURL, // baseURL + "/api" is already handled by proxy
