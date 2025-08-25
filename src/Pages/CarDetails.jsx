@@ -88,14 +88,14 @@ const CarDetails = () => {
             {[
               {
                 icon: assets.users_icon,
-                label: `${car.seating_capacity} Seats`,
+                label: `${car.seating_Capacity} Seats`,
               },
-              { icon: assets.car_icon, label: `Car Type: ${car.car_type}` },
+              { icon: assets.car_icon, label: `Car Type: ${car.category}` },
               {
                 icon: assets.location_icon,
                 label: `Location: ${car.location}`,
               },
-              { icon: assets.fuel_icon, label: `Fuel: ${car.fuel_type}` },
+              { icon: assets.fuel_icon, label: `Fuel: ${car.fuel_Type}` },
             ].map((item, idx) => (
               <div
                 key={idx}
