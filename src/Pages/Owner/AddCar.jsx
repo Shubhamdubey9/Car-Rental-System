@@ -105,7 +105,7 @@ const AddCar = () => {
           </span>
         </div>
 
-        {/* Input Grid */}
+    
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
           <input
             type="text"
@@ -194,8 +194,6 @@ const AddCar = () => {
             <option>Miami</option>
           </select>
         </div>
-
-        {/* Description */}
         <textarea
           name="description"
           value={form.description}
@@ -204,13 +202,8 @@ const AddCar = () => {
           rows={4}
           className="input w-full bg-gray-50 border border-gray-200 focus:border-blue-400 focus:ring-2 focus:ring-blue-100 rounded-lg px-4 py-2 mb-6"
         ></textarea>
-
-        {/* Submit */}
-        <button
-          type="submit"
-          className="w-full bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition font-semibold text-lg shadow"
-        >
-          ✓ List Your Car
+        <button type="submit" className="w-full bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition font-semibold text-lg shadow">
+           List Your Car
         </button>
       </form>
     </div>

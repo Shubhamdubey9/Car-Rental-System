@@ -31,7 +31,7 @@ const Cars = () => {
     fetchCars();
   }, []);
 
-  // Filter cars by city/location
+  // Filter cars by city
   const filteredCars = cars.filter((car) =>
     car.location?.toLowerCase().includes(searchCity.toLowerCase())
   );
@@ -44,14 +44,13 @@ const Cars = () => {
 
   return (
     <div>
-      {/* Header + Title */}
       <section className="w-full py-16 px-5 sm:px-10 md:px-16 lg:px-24 xl:px-32 bg-light">
         <div className="flex flex-col items-center w-full max-w-6xl mx-auto">
           <Titlle
             title="Available Cars"
             subTitle="Browse our selection of premium vehicles available in your city"
           />
-          {/* Search Bar */}
+      
           <input
             type="text"
             value={searchCity}
@@ -62,7 +61,6 @@ const Cars = () => {
         </div>
       </section>
 
-      {/* Car Grid Section */}
       <section className="py-16 px-5 sm:px-10 md:px-16 lg:px-24 xl:px-32 bg-white">
         <div className="max-w-7xl mx-auto">
           {/* Result Heading */}
@@ -73,15 +71,11 @@ const Cars = () => {
             </span>{" "}
             {filteredCars.length === 1 ? "Car" : "Cars"}
           </h2>
-
-          {/* Car Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6">
             {filteredCars.map((car) => (
               <CarCard key={car._id} car={car} />
             ))}
           </div>
-
-          {/* No Results */}
           {filteredCars.length === 0 && (
             <p className="text-center text-gray-500 mt-12">
               No cars available in "{searchCity}"

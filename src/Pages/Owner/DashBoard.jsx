@@ -46,7 +46,6 @@ const DashBoard = () => {
 
   return (
     <div className="p-6 md:p-10 bg-white min-h-screen">
-      {/* Header */}
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-gray-900 mb-2">
           Admin Dashboard
@@ -56,10 +55,7 @@ const DashBoard = () => {
           revenue, and recent activities
         </p>
       </div>
-
-      {/* Stats Boxes */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-8">
-        {/* Total Cars */}
         <div className="bg-white border rounded-lg p-5 flex items-center justify-between shadow-sm">
           <div>
             <h4 className="text-sm text-gray-500 mb-1">Total Cars</h4>
@@ -69,8 +65,6 @@ const DashBoard = () => {
             <FaCar size={20} />
           </div>
         </div>
-
-        {/* Total Bookings */}
         <div className="bg-white border rounded-lg p-5 flex items-center justify-between shadow-sm">
           <div>
             <h4 className="text-sm text-gray-500 mb-1">Total Bookings</h4>
@@ -83,7 +77,6 @@ const DashBoard = () => {
           </div>
         </div>
 
-        {/* Pending */}
         <div className="bg-white border rounded-lg p-5 flex items-center justify-between shadow-sm">
           <div>
             <h4 className="text-sm text-gray-500 mb-1">Pending</h4>
@@ -96,7 +89,6 @@ const DashBoard = () => {
           </div>
         </div>
 
-        {/* Confirmed */}
         <div className="bg-white border rounded-lg p-5 flex items-center justify-between shadow-sm">
           <div>
             <h4 className="text-sm text-gray-500 mb-1">Confirmed</h4>
@@ -110,9 +102,7 @@ const DashBoard = () => {
         </div>
       </div>
 
-      {/* Bottom Panels */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {/* Recent Bookings */}
         <div className="bg-white border rounded-lg p-6 shadow-sm">
           <h3 className="text-lg font-semibold text-gray-800 mb-2">
             Recent Bookings
@@ -136,7 +126,6 @@ const DashBoard = () => {
           </ul>
         </div>
 
-        {/* Monthly Revenue */}
         <div className="bg-white border rounded-lg p-6 shadow-sm">
           <h3 className="text-lg font-semibold text-gray-800 mb-2">
             Monthly Revenue
@@ -144,7 +133,7 @@ const DashBoard = () => {
           <p className="text-sm text-gray-500 mb-3">
             Revenue for current month
           </p>
-          <p className="text-3xl font-bold text-blue-600">${monthlyRevenue}</p>
+          <p className="text-3xl font-bold text-blue-600">₹{monthlyRevenue}</p>
         </div>
       </div>
     </div>
