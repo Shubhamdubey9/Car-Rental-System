@@ -188,10 +188,10 @@ const AddCar = () => {
             className="input bg-gray-50 border border-gray-200 focus:border-blue-400 focus:ring-2 focus:ring-blue-100 rounded-lg px-4 py-2 sm:col-span-2"
           >
             <option value="">Select a location</option>
-            <option>Los Angeles</option>
-            <option>New York</option>
-            <option>San Francisco</option>
-            <option>Miami</option>
+            <option>Patna</option>
+            <option>Sasarm</option>
+            <option>Buxur</option>
+            <option>Bhabhua</option>
           </select>
         </div>
         <textarea
